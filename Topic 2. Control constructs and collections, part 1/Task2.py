@@ -27,14 +27,15 @@ girls = ['Kate', 'Liza', 'Kira', 'Emma', 'Trisha']
 
 boys = ['Peter', 'Alex', 'John', 'Arthur', 'Richard']
 girls = ['Kate', 'Liza', 'Kira', 'Emma']
-sorted_boys = sorted(boys)
-sorted_girls = sorted(girls)
 
-print("Идеальные пары:")
-for boy, girl in zip(sorted_boys, sorted_girls):
-    print(boy, "и", girl)
+if len(boys) != len(girls):
+    print("Внимание, кто-то может остаться без пары!")
+else:
+    # Сортируем имена по алфавиту
+    sorted_boys = sorted(boys)
+    sorted_girls = sorted(girls)
 
-if len(boys) > len(girls):
-    print("Остался без пары:", boys[-1])
-elif len(girls) > len(boys):
-    print("Осталась без пары:", girls[-1])
+    # Выводим идеальные пары
+    print("Идеальные пары:")
+    for boy, girl in zip(sorted_boys, sorted_girls):
+        print(boy, "и", girl)
