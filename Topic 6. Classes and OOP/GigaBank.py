@@ -23,4 +23,4 @@ account = Account("Almaz Kadikov", 1000)
 account.deposit(900)
 account.withdraw(400)
 print(f"Balance '{account.name}' amounts to {account.balance}")  # Output: 1300
-print(account.get_transaction_history())  # Output: ['Deposited 500 units', 'Withdrew 200 units']
+print(account.get_transaction_history())  # Output: ['Deposited 900', 'Withdrew 400']
