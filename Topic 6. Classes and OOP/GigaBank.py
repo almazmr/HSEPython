@@ -22,5 +22,5 @@ class Account:
 account = Account("Almaz Kadikov", 1000)
 account.deposit(900)
 account.withdraw(400)
-print(f"Balance '{account.name}' amounts to {account.balance}")  # Output: 1300
+print(f"Balance '{account.name}' amounts to {account.balance}")  # Output: 1500
 print(account.get_transaction_history())  # Output: ['Deposited 900', 'Withdrew 400']
